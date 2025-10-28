@@ -1,0 +1,10 @@
+.nana{
+    background-image: url(../../src/images.jpeg/ima23.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+.malaga{
+    padding-top: 170px;
+    padding-left: 30px;
+    color: white;
+}
