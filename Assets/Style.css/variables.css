@@ -8,3 +8,27 @@
     padding-left: 30px;
     color: white;
 }
+.bara{
+    background-color: #c30047;
+    color: #ffffff;
+}
+.bara2{
+    background-color: #c30047;
+    /* height: 200px; */
+}
+.mara{
+    font-size: 20px;
+}
+.why{
+    color: #ffffff;
+    font-weight: 400;
+}
+/* .par{
+    margin: auto;
+    padding: auto;
+} */
+ .ima{
+    /* margin: auto; */
+    justify-content: center;
+    display: flex;
+ }
