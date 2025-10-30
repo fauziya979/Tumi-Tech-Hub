@@ -5,6 +5,15 @@
     /* color: #0e0502; */
     
 }
+.baga{
+    background-color: #c30047;
+    /* color: #ffffff; */
+}
+.whar{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 100;
+}
 .ruka{
     color: aliceblue;
 }
@@ -61,3 +70,7 @@
     color: #ffffff;
 
 }
+.banta{
+    background-color: #c30047;
+    color: #ffffff;
+ }

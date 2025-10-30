@@ -8,6 +8,14 @@
     padding-left: 30px;
     color: white;
 }
+.baga{
+    background-color: #c30047;
+}
+.whar{
+    color: #ffffff;
+    font-size: large;
+    font-weight: 100;
+}
 .bara{
     background-color: #c30047;
     color: #ffffff;
@@ -31,4 +39,8 @@
     /* margin: auto; */
     justify-content: center;
     display: flex;
+ }
+ .banta{
+    background-color: #c30047;
+    color: #ffffff;
  }
