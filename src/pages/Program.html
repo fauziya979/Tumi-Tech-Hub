@@ -1,204 +1,579 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/42f93eb1af.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../Assets/Style.css/main.css">
-     <link rel="stylesheet" href="../../Assets/Style.css/services.css">
-</head>
-<body>
-     <nav class="navbar navbar-expand-lg baga">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../images.jpeg/smlogo-removebg-preview.png" alt="logo"
-                    height="100px" width="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center ms-5" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-justified justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active whar" aria-current="page" href="#">Home</a>
-                    </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Minds - Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/42f93eb1af.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../Assets/Style.css/main.css" />
+    <link rel="stylesheet" href="../../Assets/Style.css/services.css" />
+    <style>
+      /* Custom styles for Spring Minds Services Page */
 
-                    <li class="nav-item">
-                        <a class="nav-link whar" href="About.html">ABOUT</a>
-                    </li>
+      /* Hero Section - Elegant Gradient */
+      .hero-section {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(248, 187, 208, 0.3) 30%,
+          rgba(194, 24, 91, 0.8) 70%,
+          rgba(194, 24, 91, 1) 100%
+        );
+        background-size: 400% 400%;
+        animation: gradientShift 8s ease-in-out infinite;
+        padding: 120px 0 100px;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+      }
 
-                    <li class="nav-item dropdown text-white">
-                        <a class="nav-link dropdown-toggle whar" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            SERVICES
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item whar" href="#">FOR PARENTS</a></li>
-                            <li><a class="dropdown-item whar" href="#">FOR EDUCATORS</a></li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                        </ul>
-                    </li>
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="0.8" fill="rgba(255,255,255,0.08)"/><circle cx="40" cy="80" r="1.2" fill="rgba(255,255,255,0.06)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        opacity: 0.3;
+        pointer-events: none;
+      }
 
-                    <li class="nav-item">
-                        <a class="nav-link whar" href="#">RESOURCES</a>
-                    </li>
+      .hero-section .container {
+        position: relative;
+        z-index: 2;
+        animation: fadeInUp 1.2s ease-out;
+      }
 
-                    <li class="nav-item">
-                        <a class="nav-link whar" href="#">BLOG</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link whar" aria-current="page" href="#">Get Started</a>
-                    </li>
-                </ul>
-            </div>
+      .hero-section h1 {
+        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      }
+
+      .hero-section p {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        font-weight: 400;
+        opacity: 0.95;
+      }
+
+      /* Animations */
+      @keyframes gradientShift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Service Cards Enhancement */
+      .service-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: none;
+        box-shadow: 0 4px 25px rgba(194, 24, 91, 0.08);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .service-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #c2185b, #e91e63, #f48fb1);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 15px 40px rgba(194, 24, 91, 0.15);
+      }
+
+      .service-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      /* Section Images Enhancement */
+      .section-image {
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-radius: 20px;
+        box-shadow: 0 8px 35px rgba(194, 24, 91, 0.15);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .section-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(194, 24, 91, 0.1) 0%,
+          rgba(233, 30, 99, 0.05) 50%,
+          transparent 100%
+        );
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+      }
+
+      .section-image:hover {
+        transform: scale(1.03) translateY(-5px);
+        box-shadow: 0 20px 50px rgba(194, 24, 91, 0.25);
+      }
+
+      .section-image:hover::after {
+        opacity: 1;
+      }
+
+      /* Image Container Enhancement */
+      .image-container {
+        position: relative;
+        padding: 15px;
+        background: linear-gradient(
+          135deg,
+          rgba(248, 187, 208, 0.1),
+          rgba(255, 255, 255, 0.8)
+        );
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+      }
+
+      /* Spring Heading */
+      .spring-heading {
+        background: linear-gradient(
+          135deg,
+          #c2185b 0%,
+          #e91e63 70%,
+          #f48fb1 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        position: relative;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(
+          135deg,
+          #c2185b 0%,
+          #e91e63 50%,
+          #ad1457 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1.5" fill="rgba(255,255,255,0.08)"/></svg>');
+        opacity: 0.4;
+      }
+
+      /* Footer */
+      .footer {
+        background: linear-gradient(135deg, #424242 0%, #616161 100%);
+      }
+
+      /* Responsive Enhancements */
+      @media (max-width: 992px) {
+        .hero-section {
+          padding: 100px 0 80px;
+          min-height: 50vh;
+        }
+
+        .image-container {
+          margin-bottom: 3rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 90px 0 70px;
+          min-height: 45vh;
+        }
+
+        .hero-section h1 {
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .hero-section p {
+          font-size: 1.1rem;
+        }
+
+        .section-image {
+          margin-bottom: 2rem;
+          max-height: 300px !important;
+        }
+
+        .service-card {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-section {
+          padding: 80px 0 60px;
+          min-height: 40vh;
+        }
+
+        .hero-section h1 {
+          font-size: 2rem;
+          line-height: 1.3;
+        }
+
+        .hero-section p {
+          font-size: 1rem;
+        }
+
+        .section-image {
+          max-height: 250px !important;
+        }
+      }
+
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Page load animation */
+      body {
+        animation: pageLoad 0.8s ease-out;
+      }
+
+      @keyframes pageLoad {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg baga fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../images.jpeg/smlogo-removebg-preview.png"
+            alt="Spring Minds Logo"
+            height="80"
+            width="80"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link whar" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link whar" href="About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle whar active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#parents">For Parents</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#educators">For Educators</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link whar" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link whar" href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link whar btn btn-light rounded px-3"
+                href="GetStarted.html"
+                >Get Started</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
-        <div class="container">
-            <h1 class="display-5 fw-bold">Empowering Parents & Educators</h1>
-            <p class="lead">Building bridges between homes, schools, and young minds.</p>
+    <section class="hero-section text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-xl-8">
+            <h1 class="display-3 fw-bold mb-4">
+              Empowering Parents & Educators
+            </h1>
+            <p class="lead fs-4 mb-4">
+              Building bridges between homes, schools, and young minds.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+              <a
+                href="#parents"
+                class="btn btn-light btn-lg rounded-pill px-4 py-2"
+              >
+                <i class="fas fa-heart me-2"></i>For Parents
+              </a>
+              <a
+                href="#educators"
+                class="btn btn-outline-light btn-lg rounded-pill px-4 py-2"
+              >
+                <i class="fas fa-graduation-cap me-2"></i>For Educators
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- For Parents Section -->
     <section class="py-5 bg-light" id="parents">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Text Section -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold spring-heading">For Parents</h2>
-                    <p class="text-muted">Support, guidance, and understanding — for every parent.</p>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Content - Left Side -->
+          <div class="col-lg-7 order-lg-1 order-2">
+            <div class="pe-lg-4">
+              <h2 class="fw-bold spring-heading display-5 mb-3">For Parents</h2>
+              <p class="text-muted lead mb-4">
+                Support, guidance, and understanding — for every parent.
+              </p>
 
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Parent Coaching & Guidance</h5>
-                                    <p>Personalized sessions to help parents strengthen emotional bonds, manage behavior, and build positive routines at home.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Early Childhood Workshops</h5>
-                                    <p>Interactive sessions to help parents understand milestones, emotional intelligence, and play-based learning.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Parental Wellness</h5>
-                                    <p>Support groups and reflective programs to help parents find balance and mindfulness in caregiving.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Community Awareness</h5>
-                                    <p>Join events and campaigns that celebrate parenting, inclusion, and child development across communities.</p>
-                                </div>
-                            </div>
-                        </div>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Parent Coaching & Guidance</h5>
+                      <p class="text-muted mb-0">
+                        Personalized sessions to help parents strengthen
+                        emotional bonds, manage behavior, and build positive
+                        routines at home.
+                      </p>
                     </div>
+                  </div>
                 </div>
-
-                <!-- Image Section -->
-                <div class="col-lg-6">
-                    <!-- 📍 Replace this path with your real image path -->
-                    <img src="images/for_parents.jpg" class="img-fluid rounded shadow-lg" alt="For Parents Section Image">
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Early Childhood Workshops</h5>
+                      <p class="text-muted mb-0">
+                        Interactive sessions to help parents understand
+                        milestones, emotional intelligence, and play-based
+                        learning.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Parental Wellness</h5>
+                      <p class="text-muted mb-0">
+                        Support groups and reflective programs to help parents
+                        find balance and mindfulness in caregiving.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Community Awareness</h5>
+                      <p class="text-muted mb-0">
+                        Join events and campaigns that celebrate parenting,
+                        inclusion, and child development across communities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Image - Right Side -->
+          <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0">
+            <div class="image-container">
+              <img
+                src="../../Assets/images.jpeg/for parents.jpg"
+                class="img-fluid section-image"
+                alt="Happy family with parents and children engaging together"
+                style="max-height: 500px; width: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    !-- For Educators Section -->
-    <section class="py-5" id="educators">
-        <div class="container">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <!-- Text Section -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold spring-heading">For Educators</h2>
-                    <p class="text-muted">Equipping educators to inspire every learner.</p>
-
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Teacher Training Workshops</h5>
-                                    <p>Practical sessions on inclusive teaching, classroom engagement, and social-emotional learning.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Child Development Insights</h5>
-                                    <p>Understand how children learn and grow, and apply psychology-driven strategies in teaching.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Inclusive Classroom Programs</h5>
-                                    <p>Partner with Spring Minds to promote inclusive, child-centered educational environments.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card h-100 border-0 shadow-sm service-card">
-                                <div class="card-body">
-                                    <h5 class="fw-bold">Educator Support Circles</h5>
-                                    <p>Join mentorship and collaboration circles designed to foster growth and resilience in teaching.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Section -->
-                <div class="col-lg-6">
-                    <!-- 📍 Replace this path with your real image path -->
-                    <img src="images/for_teachers.jpg" class="img-fluid rounded shadow-lg" alt="For Educators Section Image">
-                </div>
+    <!-- For Educators Section -->
+    <section class="py-5 bg-white" id="educators">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image - Left Side -->
+          <div class="col-lg-5 order-lg-1 order-1 mb-4 mb-lg-0">
+            <div class="image-container">
+              <img
+                src="../../Assets/images.jpeg/for educators image.jpg"
+                class="img-fluid section-image"
+                alt="Educators and teachers in classroom setting with students"
+                style="max-height: 500px; width: 100%; object-fit: cover"
+              />
             </div>
+          </div>
+
+          <!-- Text Content - Right Side -->
+          <div class="col-lg-7 order-lg-2 order-2">
+            <div class="ps-lg-4">
+              <h2 class="fw-bold spring-heading display-5 mb-3">
+                For Educators
+              </h2>
+              <p class="text-muted lead mb-4">
+                Equipping educators to inspire every learner.
+              </p>
+
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Teacher Training Workshops</h5>
+                      <p class="text-muted mb-0">
+                        Practical sessions on inclusive teaching, classroom
+                        engagement, and social-emotional learning.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Child Development Insights</h5>
+                      <p class="text-muted mb-0">
+                        Understand how children learn and grow, and apply
+                        psychology-driven strategies in teaching.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Inclusive Classroom Programs</h5>
+                      <p class="text-muted mb-0">
+                        Partner with Spring Minds to promote inclusive,
+                        child-centered educational environments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card h-100 service-card">
+                    <div class="card-body p-4">
+                      <h5 class="fw-bold mb-3">Educator Support Circles</h5>
+                      <p class="text-muted mb-0">
+                        Join mentorship and collaboration circles designed to
+                        foster growth and resilience in teaching.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section text-center text-white py-5">
-        <div class="container">
-            <h2 class="fw-bold">Join the Spring Minds Movement</h2>
-            <p>Together, we empower families and teachers to nurture the next generation.</p>
-            <a href="GetStarted.html" class="btn btn-light fw-bold mt-3">Get Started</a>
-        </div>
+      <div class="container">
+        <h2 class="fw-bold">Join the Spring Minds Movement</h2>
+        <p>
+          Together, we empower families and teachers to nurture the next
+          generation.
+        </p>
+        <a href="GetStarted.html" class="btn btn-light fw-bold mt-3"
+          >Get Started</a
+        >
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer text-center text-white py-3">
-        <div class="container">
-            <p class="mb-0">© 2025 Spring Minds | Empowering Parents & Educators</p>
-        </div>
+      <div class="container">
+        <p class="mb-0">© 2025 Spring Minds | Empowering Parents & Educators</p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
