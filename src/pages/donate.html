@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/42f93eb1af.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Assets/Style.css/donate.css">
+</head>
+
+<body>
+    <div class="container amarr d-flex align-items-center justify-content-center mb-4">
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="text-center text-info fw-bolder">YOUR GIFTS CREATES A BRIHTER FUTURE</h1>
+                <p class="text-center text-info fs-3">Join us in empowering children with learning difficulties and the
+                    teachers who guide them. Your support makes a world of difference.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-6 bg-danger me-5">4</div>
+            <div class="col-5 bg-dark">44</div>
+        </div>
+    </div> -->
+
+    <section class="container my-5">
+        <div class="row justify-content-center align-items-start g-4">
+            <!-- Donation Form -->
+            <div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm border">
+                <!-- Frequency Selector -->
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="btn-group" role="group" aria-label="Donation frequency">
+                        <input type="radio" class="btn-check" name="donation_frequency" id="oneTime" checked>
+                        <label class="btn btn-outline-primary px-4" for="oneTime">One-Time</label>
+
+                        <input type="radio" class="btn-check" name="donation_frequency" id="monthly">
+                        <label class="btn btn-outline-primary px-4" for="monthly">Monthly</label>
+                    </div>
+                </div>
+
+                <!-- Amount Selector -->
+                <h2 class="text-center mb-3 fw-bold fs-4">Choose Your Donation Amount</h2>
+                <div class="d-grid gap-2 d-sm-grid gap-sm-3 grid-template-columns-sm-4 mb-3 text-center">
+                    <div class="btn-group w-100" role="group" aria-label="Donation amount">
+                        <input type="radio" class="btn-check" name="donation_amount" id="amount25">
+                        <label class="btn btn-outline-secondary" for="amount25">$25</label>
+
+                        <input type="radio" class="btn-check" name="donation_amount" id="amount50" checked>
+                        <label class="btn btn-outline-secondary" for="amount50">$50</label>
+
+                        <input type="radio" class="btn-check" name="donation_amount" id="amount100">
+                        <label class="btn btn-outline-secondary" for="amount100">$100</label>
+
+                        <input type="radio" class="btn-check" name="donation_amount" id="amountOther">
+                        <label class="btn btn-outline-secondary" for="amountOther">Other</label>
+                    </div>
+                </div>
+
+                <!-- Impact Description -->
+                <div class="alert alert-warning bg-opacity-25 border-0 text-center mb-4">
+                    Your gift of <strong>$50</strong> provides a complete learning kit for one child.
+                </div>
+
+                <!-- Payment Method -->
+                <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                    <button class="btn btn-outline-primary flex-fill fw-bold">Credit Card</button>
+                    <button class="btn btn-outline-secondary flex-fill fw-bold">PayPal</button>
+                </div>
+
+                <!-- Form Fields -->
+                <form>
+                    <div class="row g-3 mb-3">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Card Number">
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="MM / YY">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" placeholder="CVC">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button class="btn btn-primary w-100 py-2 fw-bold">Give Securely</button>
+                        <p class="text-muted small mt-2 mb-0">Your payment is secure and your data is private.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
