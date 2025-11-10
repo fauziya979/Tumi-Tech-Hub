@@ -8,18 +8,77 @@
 .baga{
     background-color: #c30047;
     /* color: #ffffff; */
+    color: #ffffff;
 }
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+  font-size: 1.25rem;
+  color: #2b2b2b;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Add an underline hover effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Enroll button */
+.navbar .btn-primary {
+  border-radius: 25px;
+  font-weight: 500;
+}
+
 
 /* Change background color of the Services dropdown */
 .dropdown-menu {
   background-color: var(--bs-light-text-emphasis) !important;
 }
 
-.whar{
+/* .whar{
     color: #210303;
     font-size: large;
     font-weight: 100;
-}
+} */
 .ruka{
     color: aliceblue;
 }
