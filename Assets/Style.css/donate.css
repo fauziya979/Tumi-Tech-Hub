@@ -1,0 +1,7 @@
+.amarr{
+    background: url(../../src/images.jpeg/imageb.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
