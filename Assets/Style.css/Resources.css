@@ -1,0 +1,87 @@
+/* Navbar */
+.baga {
+  background-color: #b3004b;
+}
+
+.whar {
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero-resources {
+  background: linear-gradient(135deg, #b3004b 0%, #ff80ab 100%);
+  min-height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Headings */
+.spring-heading {
+  color: #b3004b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Resource Cards */
+.resource-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  background-color: white;
+}
+
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Downloadable Guides */
+.guide-card {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.btn-magenta {
+  background-color: #b3004b;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-magenta:hover {
+  background-color: #90003a;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #b3004b;
+}
+
+/* Footer */
+.footer {
+  background-color: #7a0033;
+  font-size: 0.9rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 992px) {
+  .hero-resources h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-resources p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
