@@ -1,171 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resources | Spring Minds</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/42f93eb1af.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../../Assets/Style.css/main.css" />
+    <link rel="stylesheet" href="../../Assets/Style.css/variables.css" />
+    <link rel="stylesheet" href="../../Assets/Style.css/Resources.css" />
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="Resources.css">
-</head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg baga">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="../images.jpeg/smlogo-removebg-preview.png"
+            alt="logo"
+            height="100px"
+            width="100px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center ms-5"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav nav-justified justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active whar" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
 
-<body>
+            <li class="nav-item">
+              <a class="nav-link whar" href="About.html">ABOUT</a>
+            </li>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg baga">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../images/smlogo-removebg-preview.png" alt="logo"
-          height="100px" width="100px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center ms-5" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-justified justify-content-end">
-          <li class="nav-item"><a class="nav-link whar" href="Home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle whar" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Programs</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Program.html#parents">For Parents</a></li>
-              <li><a class="dropdown-item" href="Program.html#educators">For Educators</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link active" href="Resources.html">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-justified">
-          <li class="nav-item"><a class="nav-link whar" href="GetStarted.html">Get Started</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+            <li class="nav-item dropdown text-white">
+              <a
+                class="nav-link dropdown-toggle whar"
+                href="Program.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PROGRAMS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item whar" href="Program.html"
+                    >FOR PARENTS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item whar" href="Program.html"
+                    >FOR EDUCATORS</a
+                  >
+                </li>
+                <!-- <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+              </ul>
+            </li>
 
-  <!-- Hero Section -->
-  <section class="hero-resources text-center text-white d-flex align-items-center justify-content-center">
-    <div class="container">
-      <h1 class="display-5 fw-bold">Resources That Empower</h1>
-      <p class="lead">Knowledge That Nurtures — explore our guides, toolkits, and insights for parents and educators.</p>
-    </div>
-  </section>
+            <li class="nav-item">
+              <a class="nav-link whar" href="Resources.html">RESOURCES</a>
+            </li>
 
-  <!-- Categories Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold spring-heading">Explore Our Resource Categories</h2>
-        <p class="text-muted">Choose a section that fits your journey of learning and growth.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center border-0 shadow-sm resource-card">
-            <div class="card-body">
-              <img src="../images/icon-parents.png" alt="Parenting" class="icon mb-3">
-              <h5 class="fw-bold">Parenting Resources</h5>
-              <p>Guides and reflections to help you nurture your child’s emotional and intellectual growth.</p>
-            </div>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link whar" href="#">BLOG</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center border-0 shadow-sm resource-card">
-            <div class="card-body">
-              <img src="../images/icon-educators.png" alt="Educators" class="icon mb-3">
-              <h5 class="fw-bold">Educator Resources</h5>
-              <p>Teaching tips, inclusive strategies, and emotional learning activities for classrooms.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center border-0 shadow-sm resource-card">
-            <div class="card-body">
-              <img src="../images/icon-development.png" alt="Child Development" class="icon mb-3">
-              <h5 class="fw-bold">Child Development</h5>
-              <p>Milestone checklists, activities, and tools for tracking healthy growth.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card text-center border-0 shadow-sm resource-card">
-            <div class="card-body">
-              <img src="../images/icon-download.png" alt="Downloads" class="icon mb-3">
-              <h5 class="fw-bold">Downloads</h5>
-              <p>Access printable charts, guides, and activity planners for parents and educators.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Downloadable Guides -->
-  <section class="py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold spring-heading">Downloadable Guides</h2>
-        <p class="text-muted">Practical tools you can use every day to support learning and growth.</p>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm guide-card h-100">
-            <div class="card-body">
-              <h5 class="fw-bold">Daily Routine Chart for Toddlers</h5>
-              <p>Help your child learn structure and consistency in a fun way.</p>
-              <a href="#" class="btn btn-magenta">Download</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm guide-card h-100">
-            <div class="card-body">
-              <h5 class="fw-bold">Milestone Tracker (0–5 Years)</h5>
-              <p>Track your child’s development month by month with this printable guide.</p>
-              <a href="#" class="btn btn-magenta">Download</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0 shadow-sm guide-card h-100">
-            <div class="card-body">
-              <h5 class="fw-bold">Inclusive Classroom Checklist</h5>
-              <p>Ensure every student feels supported and included in your classroom.</p>
-              <a href="#" class="btn btn-magenta">Download</a>
-            </div>
-          </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav nav-justified">
+            <li class="nav-item">
+              <a class="nav-link whar" aria-current="page" href="#"
+                >Get Started</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- CTA Section -->
-  <section class="cta-section text-center text-white py-5">
-    <div class="container">
-      <h2 class="fw-bold">Keep Learning. Keep Growing.</h2>
-      <p>Join our community of parents, educators, and advocates shaping a better future for children.</p>
-      <a href="GetStarted.html" class="btn btn-light fw-bold mt-3">Get Started</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section
+      class="hero-resources text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <h1 class="display-5 fw-bold">Resources That Empower</h1>
+        <p class="lead">
+          Knowledge That Nurtures explore our guides, toolkits, and insights for
+          parents and educators.
+        </p>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center text-white py-3">
-    <div class="container">
-      <p class="mb-0">© 2025 Spring Minds | Empowering Parents & Educators</p>
-    </div>
-  </footer>
+    <!-- Categories Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold spring-heading">
+            Explore Our Resource Categories
+          </h2>
+          <p class="text-muted">
+            Choose a section that fits your journey of learning and growth.
+          </p>
+        </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm resource-card">
+              <div class="card-body">
+                <img
+                  src="../../Assets/images.jpeg/IMG_4063 (1).jpeg"
+                  alt="Parenting"
+                  class="icon mb-3"
+                />
+                <h5 class="fw-bold">Parenting Resources</h5>
+                <p>
+                  Guides and reflections to help you nurture your child's
+                  emotional and intellectual growth.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm resource-card">
+              <div class="card-body">
+                <img
+                  src="../../Assets/images.jpeg/teacher_stdent.jpeg.jpg"
+                  alt="Educators"
+                  class="icon mb-3"
+                />
+                <h5 class="fw-bold">Educator Resources</h5>
+                <p>
+                  Teaching tips, inclusive strategies, and emotional learning
+                  activities for classrooms.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm resource-card">
+              <div class="card-body">
+                <img
+                  src="../../Assets/images.jpeg/IMG_4060.jpeg"
+                  alt="Child Development"
+                  class="icon mb-3"
+                />
+                <h5 class="fw-bold">Child Development</h5>
+                <p>
+                  Milestone checklists, activities, and tools for tracking
+                  healthy growth and developmental progress effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm resource-card">
+              <div class="card-body">
+                <img
+                  src="../../Assets/images.jpeg/Parenting E-Book.jpg"
+                  alt="Downloads"
+                  class="icon mb-3"
+                />
+                <h5 class="fw-bold">Downloads</h5>
+                <p>
+                  Access printable charts, guides, and activity planners for
+                  parents and educators.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Downloadable Guides -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold spring-heading">Downloadable Guides</h2>
+          <p class="text-muted">
+            Practical tools you can use every day to support learning and
+            growth.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm guide-card h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Daily Routine Chart for Toddlers</h5>
+                <p>
+                  Help your child learn structure and consistency in a fun way.
+                </p>
+                <a href="#" class="btn btn-magenta">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm guide-card h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Milestone Tracker (0–5 Years)</h5>
+                <p>
+                  Track your child’s development month by month with this
+                  printable guide.
+                </p>
+                <a href="#" class="btn btn-magenta">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 shadow-sm guide-card h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Inclusive Classroom Checklist</h5>
+                <p>
+                  Ensure every student feels supported and included in your
+                  classroom.
+                </p>
+                <a href="#" class="btn btn-magenta">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white py-5">
+      <div class="container">
+        <h2 class="fw-bold">Keep Learning. Keep Growing.</h2>
+        <p>
+          Join our community of parents, educators, and advocates shaping a
+          better future for children.
+        </p>
+        <a href="GetStarted.html" class="btn btn-light fw-bold mt-3"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white py-3">
+      <div class="container">
+        <p class="mb-0">© 2025 Spring Minds | Empowering Parents & Educators</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
