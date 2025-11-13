@@ -4,4 +4,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 15px;
 }
+.braa{
+    color: #ffffff;
+}
+.btn-outline-wine {
+  color: #7a0033;
+  border-color: #7a0033;
+}
+
+.btn-outline-wine:hover,
+.btn-check:checked + .btn-outline-wine,
+.btn-outline-wine.active,
+.btn-outline-wine.dropdown-toggle.show {
+  color: #fff;
+  background-color: #7a0033;
+  border-color: #7a0033;
+}
+.max{
+    background-color: #7a0033;
+    color: #ffffff;
+}
+.max:hover{
+    background-color: #7a0033;
+    color: #ffffff;
+}
+

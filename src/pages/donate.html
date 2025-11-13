@@ -12,14 +12,76 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../Assets/Style.css/donate.css">
+    <link rel="stylesheet" href="../../Assets/Style.css/main.css">
+    <link rel="stylesheet" href="../../Assets/Style.css/Resources.css">
 </head>
 
 <body>
-    <div class="container amarr d-flex align-items-center justify-content-center mb-4">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-2 baga">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images.jpeg/smlogo-removebg-preview.png" alt="logo" height="80px" width="80px">
+                <span class="fw-bold text-white">Spring Minds</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-lg-center gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-black" href="About.html">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-black" href="Programs.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROGRAMS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item whar" href="Program.html">FOR PARENTS</a></li>
+                            <li><a class="dropdown-item whar" href="Program.html">FOR EDUCATORS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!--<li><a class="dropdown-item whar" href="#">Something else here</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-black" href="Resources.html">RESOURCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-black active" aria-current="page" href="donate.html">Donate</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-black" href="Blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-black px-3 ms-lg-2" href="get-started.html">ENROLL</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link whar" aria-current="page" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+    <div class="container amarr d-flex align-items-center justify-content-center mb-4 mt-5">
         <div class="row text-center">
             <div class="col">
-                <h1 class="text-center text-info fw-bolder">YOUR GIFTS CREATES A BRIHTER FUTURE</h1>
-                <p class="text-center text-info fs-3">Join us in empowering children with learning difficulties and the
+                <h1 class="text-center braa fw-bolder">YOUR GIFTS CREATES A BRIGHTER FUTURE</h1>
+                <p class="text-center braa fs-3">Join us in empowering children with learning difficulties and the
                     teachers who guide them. Your support makes a world of difference.</p>
             </div>
         </div>
@@ -39,10 +101,10 @@
                 <div class="d-flex justify-content-center mb-4">
                     <div class="btn-group" role="group" aria-label="Donation frequency">
                         <input type="radio" class="btn-check" name="donation_frequency" id="oneTime" checked>
-                        <label class="btn btn-outline-primary px-4" for="oneTime">One-Time</label>
+                        <label class="btn btn-outline-wine px-4" for="oneTime">One-Time</label>
 
                         <input type="radio" class="btn-check" name="donation_frequency" id="monthly">
-                        <label class="btn btn-outline-primary px-4" for="monthly">Monthly</label>
+                        <label class="btn btn-outline-wine px-4" for="monthly">Monthly</label>
                     </div>
                 </div>
 
@@ -50,17 +112,17 @@
                 <h2 class="text-center mb-3 fw-bold fs-4">Choose Your Donation Amount</h2>
                 <div class="d-grid gap-2 d-sm-grid gap-sm-3 grid-template-columns-sm-4 mb-3 text-center">
                     <div class="btn-group w-100" role="group" aria-label="Donation amount">
-                        <input type="radio" class="btn-check" name="donation_amount" id="amount25">
-                        <label class="btn btn-outline-secondary" for="amount25">$25</label>
+                        <input type="radio" class="btn-check" name="donation_amount" id="amount25" autocomplete="off">
+                        <label class="btn btn-outline-wine" for="amount25">$25</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amount50" checked>
-                        <label class="btn btn-outline-secondary" for="amount50">$50</label>
+                        <label class="btn btn-outline-wine" for="amount50">$50</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amount100">
-                        <label class="btn btn-outline-secondary" for="amount100">$100</label>
+                        <label class="btn btn-outline-wine" for="amount100">$100</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amountOther">
-                        <label class="btn btn-outline-secondary" for="amountOther">Other</label>
+                        <label class="btn btn-outline-wine" for="amountOther">Other</label>
                     </div>
                 </div>
 
@@ -105,13 +167,35 @@
 
                     <!-- Submit Button -->
                     <div class="text-center">
-                        <button class="btn btn-primary w-100 py-2 fw-bold">Give Securely</button>
+                        <button class="btn max w-100 py-2 fw-bold">Give Securely</button>
                         <p class="text-muted small mt-2 mb-0">Your payment is secure and your data is private.</p>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section text-center text-white py-5">
+        <div class="container">
+            <h2 class="fw-bold">Keep Learning. Keep Growing.</h2>
+            <p>
+                Join our community of parents, educators, and advocates shaping a
+                better future for children.
+            </p>
+            <a href="GetStarted.html" class="btn btn-light fw-bold mt-3">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-white py-3">
+        <div class="container">
+            <p class="mb-0">© 2025 Spring Minds | Empowering Parents & Educators</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
