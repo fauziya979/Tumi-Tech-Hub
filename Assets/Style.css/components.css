@@ -21,9 +21,9 @@ body {
 
 .anamu:hover,
 .btn-check:checked + .anamu {
-  background-color: #7a0033;
+  background-color: #7a0033 !important;
   border-color: #7a0033;
-  color: #ffffff;
+  color: #ffffff !important~;
 }
 .maa{
     background-color: #7a0033;
