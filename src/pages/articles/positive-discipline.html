@@ -25,13 +25,14 @@
   </head>
 
   <body class="article-page">
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-2 baga">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand" href="#">
           <img
-            src="../../../Assets/springminds remov img.png"
-            alt="Spring Minds Logo"
+            src="../../images.jpeg/smlogo-removebg-preview.png"
+            alt="logo"
+            height="80px"
+            width="80px"
           />
           <span class="fw-bold text-white">Spring Minds</span>
         </a>
@@ -40,6 +41,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,19 +53,25 @@
         >
           <ul class="navbar-nav align-items-lg-center gap-lg-3">
             <li class="nav-item">
-              <a class="nav-link nav-black" href="../Home.html">HOME</a>
+              <a class="nav-link active" aria-current="page" href="../Home.html"
+                >HOME</a
+              >
             </li>
+
             <li class="nav-item">
               <a class="nav-link nav-black" href="../About.html">ABOUT</a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle nav-black"
                 href="../Program.html"
                 role="button"
                 data-bs-toggle="dropdown"
-                >PROGRAMS</a
+                aria-expanded="false"
               >
+                PROGRAMS
+              </a>
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item whar" href="../Program.html"
@@ -73,18 +83,25 @@
                     >FOR EDUCATORS</a
                   >
                 </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
               </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link nav-black" href="../Resources.html"
                 >RESOURCES</a
               >
             </li>
+
             <li class="nav-item">
               <a class="nav-link nav-black" href="../Blog.html">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-black px-3 ms-lg-2" href="#">ENROLL</a>
+              <a class="btn btn-black px-3 ms-lg-2" aria-current="page" href="#"
+                >GET STARTED</a
+              >
             </li>
           </ul>
         </div>
@@ -217,8 +234,10 @@
                   effectively.
                 </p>
                 <a
-                  href="emotional-intelligence.html"
+                  href="https://www.zerotothree.org/resources/1978-positive-discipline"
                   class="btn btn-outline-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Read More</a
                 >
               </div>
@@ -233,8 +252,10 @@
                   challenges.
                 </p>
                 <a
-                  href="family-resilience.html"
+                  href="https://www.healthychildren.org/English/family-life/family-dynamics/Pages/Building-Resilience-in-Children.aspx"
                   class="btn btn-outline-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >Read More</a
                 >
               </div>
