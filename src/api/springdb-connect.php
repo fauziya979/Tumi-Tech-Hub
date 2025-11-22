@@ -85,7 +85,7 @@ if ($checkResult && $checkResult->num_rows > 0) {
     echo json_encode(["status" => "error", "message" => "This email is already in use."]);
     $conn->close();
     exit();
-}
+}  
 
 // ---------------------------
 // 7. Insert user
