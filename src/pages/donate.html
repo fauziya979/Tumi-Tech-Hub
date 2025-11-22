@@ -97,6 +97,18 @@
         <div class="row justify-content-center align-items-start g-4">
             <!-- Donation Form -->
             <div class="col-lg-8 bg-white p-5 rounded-4 shadow-sm border">
+
+                <!-- Currency Selector -->
+                <div class="d-flex justify-content-center mb-4">
+                    <div class="btn-group" role="group" aria-label="Currency">
+                        <input type="radio" class="btn-check" name="currency" id="usd" checked>
+                        <label class="btn btn-outline-dark px-4" for="usd">USD ($)</label>
+
+                        <input type="radio" class="btn-check" name="currency" id="ghs">
+                        <label class="btn btn-outline-dark px-4" for="ghs">GHS (₵)</label>
+                    </div>
+                </div>
+
                 <!-- Frequency Selector -->
                 <div class="d-flex justify-content-center mb-4">
                     <div class="btn-group" role="group" aria-label="Donation frequency">
@@ -110,16 +122,16 @@
 
                 <!-- Amount Selector -->
                 <h2 class="text-center mb-3 fw-bold fs-4">Choose Your Donation Amount</h2>
-                <div class="d-grid gap-2 d-sm-grid gap-sm-3 grid-template-columns-sm-4 mb-3 text-center">
+                <div class="d-grid gap-2 d-sm-grid gap-sm-3 mb-3 text-center">
                     <div class="btn-group w-100" role="group" aria-label="Donation amount">
-                        <input type="radio" class="btn-check" name="donation_amount" id="amount25" autocomplete="off">
-                        <label class="btn btn-outline-wine" for="amount25">$25</label>
+                        <input type="radio" class="btn-check" name="donation_amount" id="amount25">
+                        <label class="btn btn-outline-wine" for="amount25">$25 / ₵300</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amount50" checked>
-                        <label class="btn btn-outline-wine" for="amount50">$50</label>
+                        <label class="btn btn-outline-wine" for="amount50">$50 / ₵600</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amount100">
-                        <label class="btn btn-outline-wine" for="amount100">$100</label>
+                        <label class="btn btn-outline-wine" for="amount100">$100 / ₵1200</label>
 
                         <input type="radio" class="btn-check" name="donation_amount" id="amountOther">
                         <label class="btn btn-outline-wine" for="amountOther">Other</label>
@@ -128,13 +140,24 @@
 
                 <!-- Impact Description -->
                 <div class="alert alert-warning bg-opacity-25 border-0 text-center mb-4">
-                    Your gift of <strong>$50</strong> provides a complete learning kit for one child.
+                    Your gift of <strong>$50 / ₵600</strong> provides a complete learning kit for one child.
                 </div>
 
-                <!-- Payment Method -->
-                <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
-                    <button class="btn btn-outline-primary flex-fill fw-bold">Credit Card</button>
-                    <button class="btn btn-outline-secondary flex-fill fw-bold">Mobile Money</button>
+                <!-- Payment Method Selector -->
+                <div id="paymentUSD" class="mb-4">
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <button class="btn btn-outline-primary flex-fill fw-bold">Credit / Debit Card</button>
+                    </div>
+                </div>
+
+                <div id="paymentGHS" class="mb-4 d-none">
+                    <h5 class="mb-2 fw-bold">Pay with Mobile Money</h5>
+                    <select class="form-select mb-2">
+                        <option>MTN Mobile Money</option>
+                        <option>Vodafone Cash</option>
+                        <option>AirtelTigo Money</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Mobile Money Number">
                 </div>
 
                 <!-- Form Fields -->
@@ -148,21 +171,34 @@
                         </div>
                     </div>
 
-                    <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Number">
+                    <!-- USD fields -->
+                    <div id="usdFields">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Card Number">
+                        </div>
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="MM / YY">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="CVC">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Card Number">
-                    </div>
-
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="MM / YY">
+                    <!-- GHS fields -->
+                    <div id="ghsFields" class="d-none">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email optional">
                         </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" placeholder="CVC">
-                        </div>
+                        <p class="text-muted small">
+                            You will receive a prompt on your phone to authorize the Mobile Money payment.
+                        </p>
                     </div>
 
                     <!-- Submit Button -->
@@ -174,7 +210,6 @@
             </div>
         </div>
     </section>
-
     <!-- CTA Section -->
     <section class="cta-section text-center text-white py-5">
         <div class="container">
@@ -196,6 +231,45 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Currency selection elements
+        const usdRadio = document.getElementById("usd");
+        const ghsRadio = document.getElementById("ghs");
+
+        // Sections for payment methods
+        const paymentUSD = document.getElementById("paymentUSD");
+        const paymentGHS = document.getElementById("paymentGHS");
+
+        // Form fields
+        const usdFields = document.getElementById("usdFields");
+        const ghsFields = document.getElementById("ghsFields");
+
+        // Switch currency
+        usdRadio.addEventListener("change", function () {
+            if (usdRadio.checked) {
+                // Show USD section
+                paymentUSD.classList.remove("d-none");
+                usdFields.classList.remove("d-none");
+
+                // Hide GHS section
+                paymentGHS.classList.add("d-none");
+                ghsFields.classList.add("d-none");
+            }
+        });
+
+        ghsRadio.addEventListener("change", function () {
+            if (ghsRadio.checked) {
+                // Show GHS section
+                paymentGHS.classList.remove("d-none");
+                ghsFields.classList.remove("d-none");
+
+                // Hide USD section
+                paymentUSD.classList.add("d-none");
+                usdFields.classList.add("d-none");
+            }
+        });
+    </script>
+
 
 </body>
 
